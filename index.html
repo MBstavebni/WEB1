@@ -1,61 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M B Stavební spol. s.r.o.</title>
-    <style>
-        /* CSS pro živější pozadí */
-        body {
-            background-color: #f0f0f0; /* světle šedá */
-            /* další styly dle potřeby */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Domů</a></li>
-                <li><a href="#about">O nás</a></li>
-                <li><a href="#services">Služby</a></li>
-                <li><a href="#contact">Kontakty</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1><a href="#home">M B Stavební spol. s.r.o.</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Domů</a></li>
+                    <li><a href="#about">O nás</a></li>
+                    <li><a href="#services">Služby</a></li>
+                    <li><a href="#contact">Kontakty</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <section id="home">
-        <h1>Domů</h1>
-        <ul>
-            <li><a href="http://www.ri-okna.cz">RI Okna</a></li>
-            <li><a href="http://www.climax.com">Climax</a></li>
-            <li><a href="http://www.lomax.com">Lomax</a></li>
-            <li><a href="http://www.somfy.com">Somfy</a></li>
-        </ul>
+        <div class="container">
+            <h2>Vítejte u nás!</h2>
+            <p>Jsme regionální dodavatel pro <a href="http://www.ri-okna.cz">RI Okna</a>, dále nabízíme výrobky Climax, Lomax a Somfy, vše včetně prací.</p>
+        </div>
     </section>
+
     <section id="about">
-        <h2>O nás</h2>
-        <p>Jsme stavební firma specializující se na fasádní výplně (okna, dveře, vrata), stínící techniku a veškeré příslušenství s historií od roku 1999.</p>
+        <div class="container">
+            <h2>O nás</h2>
+            <p>Jsme stavební firma specializující se na fasádní výplně (okna, dveře, vrata), stínící techniku a veškeré příslušenství s historií od roku 1999.</p>
+        </div>
     </section>
+
     <section id="services">
-        <h2>Služby</h2>
-        <p>Nabízíme odbornou konzultaci, zaměření, dodání a stavební práce spojené s naší nabídkou.</p>
+        <div class="container">
+            <h2>Služby</h2>
+            <ul>
+                <li>Odborná konzultace</li>
+                <li>Zaměření</li>
+                <li>Dodání materiálu</li>
+                <li>Stavební práce a montáž</li>
+            </ul>
+        </div>
     </section>
+
     <section id="contact">
-        <h2>Kontakty</h2>
-        <h3>Jednatel (technik)</h3>
-        <p>Kontakt: +420603848850</p>
-        <h3>E-mail</h3>
-        <p>obchod@mbstavebni.cz</p>
-        <h3>Druhý e-mail</h3>
-        <p>bakov@ri-okna.as</p>
-        <h3>Kontaktní formulář</h3>
-        <form action="#" method="post">
-            <label for="fullname">Jméno a příjmení:</label><br>
-            <input type="text" id="fullname" name="fullname" required><br><br>
-            <label for="attachment">Příloha:</label><br>
-            <input type="file" id="attachment" name="attachment"><br><br>
-            <input type="submit" value="Odeslat">
-        </form>
+        <div class="container">
+            <h2>Kontakty</h2>
+            <div class="contact-person">
+                <h3>Jednatel (technik)</h3>
+                <p>Libor Bartoš<br>+420603848850<br><a href="mailto:obchod@mbstavebni.cz">obchod@mbstavebni.cz</a></p>
+            </div>
+            <div class="contact-person">
+                <h3>Reklamace, servis</h3>
+                <p>Aleš Féna<br>+420775773509</p>
+            </div>
+            <div class="contact-form">
+                <h3>Kontaktní formulář</h3>
+                <form action="#" method="post">
+                    <label for="fullname">Jméno a příjmení:</label><br>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+                    <label for="attachment">Nahrát přílohu:</label><br>
+                    <input type="file" id="attachment" name="attachment"><br><br>
+                    <input type="submit" value="Odeslat">
+                </form>
+            </div>
+        </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 M B Stavební spol. s.r.o. | Vytvořeno s láskou pomocí umělé inteligence</p>
+        </div>
+    </footer>
 </body>
 </html>
