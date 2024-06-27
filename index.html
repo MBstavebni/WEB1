@@ -1,78 +1,61 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M B Stavební spol. s.r.o.</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS pro živější pozadí */
+        body {
+            background-color: #f0f0f0; /* světle šedá */
+            /* další styly dle potřeby */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo-ri-okna.png" alt="RI Okna logo">
-        </div>
-        <h1>M B Stavební spol. s.r.o.</h1>
         <nav>
             <ul>
                 <li><a href="#home">Domů</a></li>
                 <li><a href="#about">O nás</a></li>
                 <li><a href="#services">Služby</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#contact">Kontakty</a></li>
             </ul>
         </nav>
     </header>
-
     <section id="home">
-        <h2>Domů</h2>
-        <p>Vítejte na stránkách společnosti M B Stavební spol. s.r.o. Jsme regionální dodavatel pro RI Okna a nabízíme výrobky Climax, Lomax a Somfy včetně všech potřebných prací.</p>
+        <h1>Domů</h1>
+        <ul>
+            <li><a href="http://www.ri-okna.cz">RI Okna</a></li>
+            <li><a href="http://www.climax.com">Climax</a></li>
+            <li><a href="http://www.lomax.com">Lomax</a></li>
+            <li><a href="http://www.somfy.com">Somfy</a></li>
+        </ul>
     </section>
-
     <section id="about">
         <h2>O nás</h2>
-        <p>Společnost M B Stavební spol. s.r.o. se specializuje na dodávku a montáž oken a dalších stavebních prvků. Jsme tu pro vás od roku 2000.</p>
+        <p>Jsme stavební firma specializující se na fasádní výplně (okna, dveře, vrata), stínící techniku a veškeré příslušenství s historií od roku 1999.</p>
     </section>
-
     <section id="services">
         <h2>Služby</h2>
-        <p>Nabízíme širokou škálu služeb včetně:
-            <ul>
-                <li>Montáže a servisu RI Okna</li>
-                <li>Výrobků Climax, Lomax a Somfy</li>
-                <li>Realizace stavebních prací</li>
-                <li>Poradenství a projektové činnosti</li>
-            </ul>
-        </p>
+        <p>Nabízíme odbornou konzultaci, zaměření, dodání a stavební práce spojené s naší nabídkou.</p>
     </section>
-
     <section id="contact">
-        <h2>Kontakt</h2>
-        <div class="contact-info">
-            <p><strong>Libor Bartoš ml.</strong><br>
-            Obchod, technik<br>
-            Tel: <a href="tel:+420734819842">+420 734 819 842</a></p>
-
-            <p><strong>Libor Bartoš</strong><br>
-            Jednatel<br>
-            Tel: <a href="tel:+420603848850">+420 603 848 850</a></p>
-
-            <p><strong>Aleš Féna</strong><br>
-            Reklamace, servis<br>
-            Tel: <a href="tel:+420775773509">+420 775 773 509</a></p>
-
-            <p>Email: <a href="mailto:obchod@mbstavebni.cz">obchod@mbstavebni.cz</a></p>
-        </div>
-
-        <form id="contact-form" action="mailto:obchod@mbstavebni.cz" method="post" enctype="text/plain">
-            <label for="name">Jméno:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Zpráva:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Odeslat</button>
+        <h2>Kontakty</h2>
+        <h3>Jednatel (technik)</h3>
+        <p>Kontakt: +420603848850</p>
+        <h3>E-mail</h3>
+        <p>obchod@mbstavebni.cz</p>
+        <h3>Druhý e-mail</h3>
+        <p>bakov@ri-okna.as</p>
+        <h3>Kontaktní formulář</h3>
+        <form action="#" method="post">
+            <label for="fullname">Jméno a příjmení:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+            <label for="attachment">Příloha:</label><br>
+            <input type="file" id="attachment" name="attachment"><br><br>
+            <input type="submit" value="Odeslat">
         </form>
     </section>
-
-    <script src="script.js"></script>
 </body>
 </html>
